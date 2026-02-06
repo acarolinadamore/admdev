@@ -39,7 +39,7 @@ export default function Sites() {
               }}
             >
               <img
-                src="/ana4.JPG"
+                src="/ana4.jpg"
                 alt="Ana Carolina Damore"
                 className="w-[284px] h-[284px] rounded-full object-cover object-top"
               />
