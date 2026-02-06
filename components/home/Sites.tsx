@@ -100,7 +100,7 @@ export default function Sites() {
                 <p className="text-sm text-white/70 mt-1">Clientes Satisfeitos</p>
               </div>
               <div className="bg-gradient-to-br from-green-500/30 to-emerald-500/30 backdrop-blur-sm border-2 border-green-400/50 rounded-xl p-4 flex items-center justify-center hover:bg-green-500/40 transition-all">
-                <p className="text-base font-bold text-green-300 text-center">Disponibilidade Imediata</p>
+                <p className="text-xs sm:text-sm md:text-base font-bold text-green-300 text-center">Disponibilidade Imediata</p>
               </div>
             </div>
           </motion.div>

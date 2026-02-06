@@ -167,7 +167,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{
               opacity: 1,
-              x: -130,
+              x: { xs: 0, lg: -130 },
               y: [30, 0, 30],
             }}
             transition={{
@@ -180,11 +180,11 @@ export default function Hero() {
               },
             }}
             onClick={() => window.open('https://lnkd.in/dew8SBPe', '_blank')}
-            className="hidden lg:block relative z-20 cursor-pointer"
+            className="absolute top-4 right-4 sm:top-8 sm:right-8 lg:relative lg:top-auto lg:right-auto z-20 cursor-pointer"
           >
             {/* Círculo brilhante ao redor */}
             <div
-              className="rounded-full w-[296px] xl:w-[356px] h-[296px] xl:h-[356px] flex items-center justify-center"
+              className="rounded-full w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] lg:w-[296px] xl:w-[356px] lg:h-[296px] xl:h-[356px] flex items-center justify-center"
               style={{
                 background: 'linear-gradient(to right, rgba(34, 211, 238, 1), rgba(59, 130, 246, 1), rgba(168, 85, 247, 1))',
                 boxShadow: `
@@ -201,7 +201,7 @@ export default function Hero() {
               <img
                 src="/ana.JPG"
                 alt="Ana Carolina Damore"
-                className="w-[280px] xl:w-[340px] h-[280px] xl:h-[340px] rounded-full object-cover"
+                className="w-[132px] h-[132px] sm:w-[172px] sm:h-[172px] lg:w-[280px] xl:w-[340px] lg:h-[280px] xl:h-[340px] rounded-full object-cover"
               />
             </div>
           </motion.div>
