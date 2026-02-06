@@ -11,9 +11,7 @@ const budgetSchema = z.object({
   name: z.string().min(3, 'Nome deve ter no mínimo 3 caracteres'),
   email: z.string().email('Email inválido'),
   phone: z.string().min(10, 'Telefone inválido').optional().or(z.literal('')),
-  project_type: z.enum(['site', 'sistema', 'loja', 'aplicativo'], {
-    message: 'Selecione o tipo de projeto',
-  }),
+  project_type: z.enum(['site', 'sistema', 'loja', 'aplicativo'], 'Selecione o tipo de projeto'),
   description: z.string().min(20, 'Descreva seu projeto com no mínimo 20 caracteres'),
   deadline: z.string().optional(),
   budget_range: z.string().optional(),
