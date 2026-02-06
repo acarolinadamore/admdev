@@ -122,13 +122,13 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Imagem flutuante - notebook */}
+          {/* Imagem flutuante - mobile */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{
               opacity: 1,
               x: -130,
-              y: [0, -30, 0],
+              y: [30, 0, 30],
             }}
             transition={{
               opacity: { duration: 0.8 },
@@ -139,12 +139,13 @@ export default function Hero() {
                 ease: "easeInOut",
               },
             }}
-            className="hidden lg:block relative z-20"
+            onClick={() => window.open('https://lnkd.in/dew8SBPe', '_blank')}
+            className="hidden lg:block relative z-20 cursor-pointer"
           >
             <img
-              src="/notebook.png"
+              src="/mobile.png"
               alt="ADM Tecnologia"
-              className="w-[360px] xl:w-[440px] drop-shadow-2xl"
+              className="w-[280px] xl:w-[340px] drop-shadow-2xl"
             />
           </motion.div>
         </div>

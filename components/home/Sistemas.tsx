@@ -119,7 +119,7 @@ const systemTypes: SystemType[] = [
       "Layout personalizado",
       "Deploy nas lojas",
     ],
-    technologies: ["React Native", "Expo", "Node.js", "Firebase"]
+    technologies: ["React Native", "Expo", "Node.js", "Supabase"]
   },
 ]
 
@@ -304,7 +304,7 @@ Aguardo retorno!`
               {selectedType.additionalPagePrice > 0 && (
                 <div className="mb-6">
                   <label className="block text-sm font-semibold mb-2">
-                    Número de telas/módulos adicionais:
+                    Número de telas adicionais:
                   </label>
                   <div className="flex items-center gap-4">
                     <input

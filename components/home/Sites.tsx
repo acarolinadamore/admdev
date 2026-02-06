@@ -42,8 +42,8 @@ const siteTypes: SiteType[] = [
     name: "Site React + Vite",
     description: "Site moderno e rápido",
     icon: "/react.png",
-    basePrice: 1600,
-    additionalPagePrice: 200,
+    basePrice: 1800,
+    additionalPagePrice: 300,
     minPages: 0,
     baseIncludes: "(Home, Login, Cadastro, Recuperar Senha)",
     features: [
@@ -56,7 +56,7 @@ const siteTypes: SiteType[] = [
       "Animações modernas",
       "Gerenciamento de estado",
     ],
-    technologies: ["React", "Vite", "Tailwind"]
+    technologies: ["React", "Vite", "Tailwind", "MySQL"]
   },
   {
     id: "landing",
