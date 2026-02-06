@@ -7,11 +7,13 @@ import { z } from 'zod';
 import { useState } from 'react';
 import { Send, MessageCircle, Loader2 } from 'lucide-react';
 
+const projectTypes = ['site', 'sistema', 'loja', 'aplicativo'] as const;
+
 const budgetSchema = z.object({
   name: z.string().min(3, 'Nome deve ter no mínimo 3 caracteres'),
   email: z.string().email('Email inválido'),
   phone: z.string().min(10, 'Telefone inválido').optional().or(z.literal('')),
-  project_type: z.enum(['site', 'sistema', 'loja', 'aplicativo'] as const),
+  project_type: z.enum(projectTypes),
   description: z.string().min(20, 'Descreva seu projeto com no mínimo 20 caracteres'),
   deadline: z.string().optional(),
   budget_range: z.string().optional(),
