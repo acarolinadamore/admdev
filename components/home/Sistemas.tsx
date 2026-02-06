@@ -10,9 +10,9 @@ type Technology = {
 }
 
 const technologies: Technology[] = [
-  { name: "HTML5", icon: "/tecnologias/logo-html.jpg", category: ["frontend"] },
-  { name: "CSS3", icon: "/tecnologias/logo-css.jpg", category: ["frontend"] },
-  { name: "JavaScript", icon: "/tecnologias/logo-js.jpg", category: ["frontend"] },
+  { name: "HTML5", icon: "/tecnologias/logo-html.png", category: ["frontend"] },
+  { name: "CSS3", icon: "/tecnologias/logo-css.png", category: ["frontend"] },
+  { name: "JavaScript", icon: "/tecnologias/logo-js.png", category: ["frontend"] },
   { name: "React", icon: "/tecnologias/logo-react.png", category: ["frontend"] },
   { name: "Next.js", icon: "/tecnologias/logo-next.png", category: ["frontend"] },
   { name: "Vite", icon: "/tecnologias/logo-vite.png", category: ["frontend"] },
@@ -28,7 +28,7 @@ const technologies: Technology[] = [
   { name: "GitHub", icon: "/tecnologias/logo-github.png", category: ["tecnologias"] },
   { name: "GitLab", icon: "/tecnologias/logo-gitlab.svg", category: ["tecnologias"] },
   { name: "NPM", icon: "/tecnologias/logo-npm.png", category: ["tecnologias"] },
-  { name: "Yarn", icon: "/tecnologias/logo-yarn.jpg", category: ["tecnologias"] },
+  { name: "Yarn", icon: "/tecnologias/logo-yarn.png", category: ["tecnologias"] },
   { name: "Vercel", icon: "/tecnologias/logo-vercel.png", category: ["tecnologias"] },
   { name: "Render", icon: "/tecnologias/logo-render.png", category: ["tecnologias"] },
   { name: "Figma", icon: "/tecnologias/logo-figma.svg", category: ["uiux"] },
