@@ -122,7 +122,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Imagem flutuante - mobile */}
+          {/* Imagem flutuante - Ana */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{
@@ -143,9 +143,9 @@ export default function Hero() {
             className="hidden lg:block relative z-20 cursor-pointer"
           >
             <img
-              src="/mobile.png"
-              alt="ADM Tecnologia"
-              className="w-[280px] xl:w-[340px] drop-shadow-2xl"
+              src="/imagem-inicio.png"
+              alt="Ana Carolina Damore"
+              className="w-[280px] xl:w-[340px] rounded-full aspect-square object-cover drop-shadow-2xl"
             />
           </motion.div>
         </div>
