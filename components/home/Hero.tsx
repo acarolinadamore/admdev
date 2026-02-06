@@ -167,7 +167,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{
               opacity: 1,
-              x: { xs: 0, lg: -130 },
+              x: 0,
               y: [30, 0, 30],
             }}
             transition={{
@@ -180,7 +180,7 @@ export default function Hero() {
               },
             }}
             onClick={() => window.open('https://lnkd.in/dew8SBPe', '_blank')}
-            className="absolute top-4 right-4 sm:top-8 sm:right-8 lg:relative lg:top-auto lg:right-auto z-20 cursor-pointer"
+            className="absolute top-4 right-4 sm:top-8 sm:right-8 lg:relative lg:top-auto lg:right-auto lg:-translate-x-32 z-20 cursor-pointer"
           >
             {/* Círculo brilhante ao redor */}
             <div
