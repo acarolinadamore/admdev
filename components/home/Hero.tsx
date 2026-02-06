@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
+import { Facebook, Instagram, Linkedin, Github, Mail, MessageCircle } from "lucide-react"
 
 export default function Hero() {
   const words = [
@@ -13,8 +14,8 @@ export default function Hero() {
     "frontend",
   ]
   const phrases = [
-    "Transforme sua ideia em realidade",
-    "Leve o seu negócio ao próximo nível",
+    "Crio soluções que impactam e geram resultados",
+    "Leve sua equipe de desenvolvimento para o próximo nível",
   ]
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0)
@@ -51,13 +52,6 @@ export default function Hero() {
       {/* Conteúdo */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between gap-8 relative">
-          {/* Fundo grande - fora do container de imagens */}
-          <img
-            src="/fundo.png"
-            alt="Background"
-            className="absolute top-1/2 right-[20px] -translate-y-1/2 w-[500px] xl:w-[600px] opacity-20 pointer-events-none z-0"
-          />
-
           {/* Texto à esquerda */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -81,13 +75,13 @@ export default function Hero() {
               </AnimatePresence>
             </div>
 
-            {/* Texto animado "Somos experts em:" */}
+            {/* Texto animado "Sou expert em:" */}
             <div className="mb-8" style={{ lineHeight: "1.2" }}>
-              <div className="text-3xl md:text-5xl lg:text-7xl font-normal text-white">
-                Somos
+              <div className="text-xl md:text-3xl lg:text-4xl font-normal text-white mb-4">
+                Oi, sou Ana Damore
               </div>
               <div className="text-3xl md:text-5xl lg:text-7xl font-normal text-white">
-                experts em:
+                Sou expert em:
               </div>
               <div className="relative h-16 md:h-20 lg:h-28 overflow-visible">
                 <AnimatePresence mode="wait">
@@ -105,19 +99,65 @@ export default function Hero() {
               </div>
             </div>
 
+            {/* Ícones de redes sociais */}
+            <div className="flex gap-4 mb-6">
+              <a
+                href="http://facebook.com/acarolinadamore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <Facebook size={20} className="text-white" />
+              </a>
+              <a
+                href="http://instagram.com/acarolinadamore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <Instagram size={20} className="text-white" />
+              </a>
+              <a
+                href="https://wa.me/5511982653711"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <MessageCircle size={20} className="text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ana-damore/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <Linkedin size={20} className="text-white" />
+              </a>
+              <a
+                href="https://github.com/acarolinadamore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <Github size={20} className="text-white" />
+              </a>
+              <a
+                href="mailto:acarolinadamore@gmail.com"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 border border-white/20"
+              >
+                <Mail size={20} className="text-white" />
+              </a>
+            </div>
+
             {/* Botão único */}
             <div>
               <button
                 onClick={() => {
-                  // Navega para Orçamento (index 3)
-                  const event = new CustomEvent("navigate-section", {
-                    detail: 3,
-                  })
-                  window.dispatchEvent(event)
+                  window.open('https://wa.me/5511982653711', '_blank')
                 }}
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white font-bold hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 transition-all duration-300 text-lg md:text-xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/50 rounded-full"
               >
-                Faça um Orçamento
+                Fale Comigo
               </button>
             </div>
           </motion.div>
@@ -142,11 +182,28 @@ export default function Hero() {
             onClick={() => window.open('https://lnkd.in/dew8SBPe', '_blank')}
             className="hidden lg:block relative z-20 cursor-pointer"
           >
-            <img
-              src="/imagem-inicio.png"
-              alt="Ana Carolina Damore"
-              className="w-[280px] xl:w-[340px] rounded-full aspect-square object-cover drop-shadow-2xl"
-            />
+            {/* Círculo brilhante ao redor */}
+            <div
+              className="rounded-full w-[296px] xl:w-[356px] h-[296px] xl:h-[356px] flex items-center justify-center"
+              style={{
+                background: 'linear-gradient(to right, rgba(34, 211, 238, 1), rgba(59, 130, 246, 1), rgba(168, 85, 247, 1))',
+                boxShadow: `
+                  0 0 10px rgba(59, 130, 246, 0.8),
+                  0 0 20px rgba(59, 130, 246, 0.6),
+                  0 0 30px rgba(59, 130, 246, 0.4),
+                  0 0 40px rgba(59, 130, 246, 0.2),
+                  inset 0 0 15px rgba(59, 130, 246, 0.3)
+                `,
+                filter: 'brightness(1.3)',
+              }}
+            >
+              {/* Imagem */}
+              <img
+                src="/ana.JPG"
+                alt="Ana Carolina Damore"
+                className="w-[280px] xl:w-[340px] h-[280px] xl:h-[340px] rounded-full object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>

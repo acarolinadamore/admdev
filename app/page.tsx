@@ -7,14 +7,16 @@ import Hero from '@/components/home/Hero';
 import Sites from '@/components/home/Sites';
 import Sistemas from '@/components/home/Sistemas';
 import BudgetForm from '@/components/home/BudgetForm';
+import CV from '@/components/home/CV';
 import Footer from '@/components/ui/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
 
 const sections = [
   { component: Hero, name: 'Início' },
-  { component: Sites, name: 'Sites' },
-  { component: Sistemas, name: 'Sistemas' },
-  { component: BudgetForm, name: 'Orçamento' },
+  { component: Sites, name: 'Sobre' },
+  { component: Sistemas, name: 'Tecnologias' },
+  { component: BudgetForm, name: 'Projetos' },
+  { component: CV, name: 'CV' },
 ];
 
 export default function Home() {
