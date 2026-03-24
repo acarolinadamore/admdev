@@ -3,36 +3,46 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Facebook, Instagram, Linkedin, Github, Mail, MessageCircle } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/LanguageContext"
 
 export default function Hero() {
-  const words = [
-    "sites",
-    "sistemas",
-    "wordpress",
-    "loja virtual",
-    "protótipos",
-    "frontend",
-  ]
-  const phrases = [
-    "Crio soluções que impactam e geram resultados",
-    "Leve sua equipe de desenvolvimento para o próximo nível",
-  ]
+  const { t, language } = useLanguage()
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0)
+
+  const words = [
+    t("hero.words.sites"),
+    t("hero.words.systems"),
+    t("hero.words.wordpress"),
+    t("hero.words.ecommerce"),
+    t("hero.words.prototypes"),
+    t("hero.words.frontend"),
+  ]
+
+  const phrases = [
+    t("hero.phrases.0"),
+    t("hero.phrases.1"),
+  ]
+
+  // Reset indices when language changes
+  useEffect(() => {
+    setCurrentWordIndex(0)
+    setCurrentPhraseIndex(0)
+  }, [language])
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prev) => (prev + 1) % words.length)
     }, 2000)
     return () => clearInterval(interval)
-  }, [])
+  }, [words.length])
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length)
     }, 6000)
     return () => clearInterval(interval)
-  }, [])
+  }, [phrases.length])
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Vídeo de fundo */}
@@ -53,12 +63,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between gap-8 relative">
           {/* Texto à esquerda */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl relative z-10"
-          >
+          <div className="max-w-3xl relative z-10">
             {/* Texto acima com animação de fade */}
             <div className="text-lg md:text-xl lg:text-2xl font-normal mb-4 h-8 md:h-10">
               <AnimatePresence mode="wait">
@@ -78,10 +83,10 @@ export default function Hero() {
             {/* Texto animado "Sou expert em:" */}
             <div className="mb-8" style={{ lineHeight: "1.2" }}>
               <div className="text-xl md:text-3xl lg:text-4xl font-normal text-white mb-4">
-                Oi, sou Ana Damore
+                {t("hero.greeting")}
               </div>
               <div className="text-3xl md:text-5xl lg:text-7xl font-normal text-white">
-                Sou expert em:
+                {t("hero.expert")}
               </div>
               <div className="relative h-16 md:h-20 lg:h-28 overflow-visible">
                 <AnimatePresence mode="wait">
@@ -157,22 +162,17 @@ export default function Hero() {
                 }}
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white font-bold hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 transition-all duration-300 text-lg md:text-xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/50 rounded-full"
               >
-                Fale Comigo
+                {t("hero.cta")}
               </button>
             </div>
-          </motion.div>
+          </div>
 
           {/* Imagem flutuante - Ana */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
             animate={{
-              opacity: 1,
-              x: 0,
               y: [30, 0, 30],
             }}
             transition={{
-              opacity: { duration: 0.8 },
-              x: { duration: 0.8 },
               y: {
                 duration: 4,
                 repeat: Infinity,

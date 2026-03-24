@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
+import LanguageSwitcher from "./LanguageSwitcher"
 
 interface Section {
   name: string
@@ -24,12 +25,7 @@ export default function Header({
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const menuItems = sections || [
-    { name: "Home" },
-    { name: "Sobre" },
-    { name: "Portfolio" },
-    { name: "Orçamento" },
-  ]
+  const menuItems = sections || []
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/40 via-black/30 to-transparent backdrop-blur-md border-b border-white/10">
@@ -79,48 +75,54 @@ export default function Header({
           </motion.div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            {menuItems.map((item, index) => (
-              <button
-                key={index}
-                onClick={() => onNavigate(index)}
-                className={`relative text-base font-medium transition-all ${
-                  currentSection === index
-                    ? "text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
-                    : "text-white/70 hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]"
-                }`}
-              >
-                {item.name}
-                {currentSection === index && (
-                  <motion.div
-                    layoutId="activeSection"
-                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-full"
-                    style={{
-                      boxShadow: `
-                        0 0 8px rgba(59, 130, 246, 0.8),
-                        0 0 15px rgba(59, 130, 246, 0.6),
-                        0 0 25px rgba(59, 130, 246, 0.4),
-                        0 2px 10px rgba(59, 130, 246, 0.3)
-                      `,
-                      filter: "brightness(1.3)",
-                    }}
-                    initial={index === 0 ? { x: "-100%", opacity: 0 } : false}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: "-100%", opacity: 0 }}
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
-              </button>
-            ))}
+          <div className="hidden md:flex items-center gap-12">
+            <div className="flex items-center gap-8">
+              {menuItems.map((item, index) => (
+                <button
+                  key={index}
+                  onClick={() => onNavigate(index)}
+                  className={`relative text-base font-medium transition-all ${
+                    currentSection === index
+                      ? "text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+                      : "text-white/70 hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]"
+                  }`}
+                >
+                  {item.name}
+                  {currentSection === index && (
+                    <motion.div
+                      layoutId="activeSection"
+                      className="absolute -bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-full"
+                      style={{
+                        boxShadow: `
+                          0 0 8px rgba(59, 130, 246, 0.8),
+                          0 0 15px rgba(59, 130, 246, 0.6),
+                          0 0 25px rgba(59, 130, 246, 0.4),
+                          0 2px 10px rgba(59, 130, 246, 0.3)
+                        `,
+                        filter: "brightness(1.3)",
+                      }}
+                      initial={index === 0 ? { x: "-100%", opacity: 0 } : false}
+                      animate={{ x: 0, opacity: 1 }}
+                      exit={{ x: "-100%", opacity: 0 }}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </button>
+              ))}
+            </div>
+            <LanguageSwitcher />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Menu Button and Language Switcher */}
+          <div className="md:hidden flex items-center gap-3">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

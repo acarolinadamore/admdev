@@ -1,8 +1,12 @@
+'use client';
+
 import { Mail, Phone, Github, Linkedin, Heart } from 'lucide-react';
 import Link from 'next/link';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-slate-900 text-slate-300">
@@ -12,8 +16,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-xl font-bold mb-4">Ana Carolina Damore</h3>
             <p className="text-sm leading-relaxed mb-4">
-              Front-End & UI Developer especializada em criar experiências digitais
-              excepcionais com as tecnologias mais modernas.
+              {t("footer.description")}
             </p>
             <div className="flex gap-4">
               <a
@@ -39,21 +42,21 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Links Rápidos</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#sobre" className="hover:text-white transition-colors">
-                  Sobre Mim
+                  {t("footer.about")}
                 </Link>
               </li>
               <li>
                 <Link href="#portfolio" className="hover:text-white transition-colors">
-                  Portfolio
+                  {t("footer.portfolio")}
                 </Link>
               </li>
               <li>
                 <Link href="#orcamento" className="hover:text-white transition-colors">
-                  Solicitar Orçamento
+                  {t("footer.budget")}
                 </Link>
               </li>
             </ul>
@@ -61,7 +64,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contato</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -90,9 +93,9 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-slate-800 text-center text-sm">
           <p className="flex items-center justify-center gap-2">
-            © {currentYear} Ana Carolina Damore. Desenvolvido com
+            © {currentYear} {t("footer.copyright")}
             <Heart className="w-4 h-4 text-red-500 fill-current" />
-            e muito café.
+            {t("footer.and")}
           </p>
         </div>
       </div>

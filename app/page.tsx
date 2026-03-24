@@ -10,16 +10,18 @@ import BudgetForm from '@/components/home/BudgetForm';
 import CV from '@/components/home/CV';
 import Footer from '@/components/ui/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
-
-const sections = [
-  { component: Hero, name: 'Início' },
-  { component: Sites, name: 'Sobre' },
-  { component: Sistemas, name: 'Tecnologias' },
-  { component: BudgetForm, name: 'Projetos' },
-  { component: CV, name: 'CV' },
-];
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
 export default function Home() {
+  const { t } = useLanguage();
+
+  const sections = [
+    { component: Hero, name: t('header.menu.home') },
+    { component: Sites, name: t('header.menu.about') },
+    { component: Sistemas, name: t('header.menu.technologies') },
+    { component: BudgetForm, name: t('header.menu.projects') },
+    { component: CV, name: t('header.menu.cv') },
+  ];
   const [currentSection, setCurrentSection] = useState(0); // Começa em "Início" (index 0)
   const [direction, setDirection] = useState(0);
   const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -83,10 +85,10 @@ export default function Home() {
             key={currentSection}
             custom={direction}
             variants={slideVariants}
-            initial={isFirstLoad ? "center" : "enter"}
+            initial={isFirstLoad ? false : "enter"}
             animate="center"
             exit="exit"
-            transition={{
+            transition={isFirstLoad ? { duration: 0 } : {
               x: { type: 'spring', stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}

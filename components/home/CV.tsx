@@ -2,8 +2,21 @@
 
 import { motion } from "framer-motion"
 import { Download, Eye } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/LanguageContext"
 
 export default function CV() {
+  const { t, language } = useLanguage()
+
+  // Define CV paths based on language
+  const cvPaths = {
+    frontend: language === 'en' ? '/EN CV-FrontEnd-AnaDamore.pdf' : '/CV-FrontEnd-AnaDamore.pdf',
+    uiux: language === 'en' ? '/EN-UIUX-AnaDamore.pdf' : '/CV-UIUX-AnaDamore.pdf'
+  }
+
+  const cvFileNames = {
+    frontend: language === 'en' ? 'EN-CV-FrontEnd-AnaDamore.pdf' : 'CV-FrontEnd-AnaDamore.pdf',
+    uiux: language === 'en' ? 'EN-CV-UIUX-AnaDamore.pdf' : 'CV-UIUX-AnaDamore.pdf'
+  }
   return (
     <section className="relative h-screen overflow-hidden pt-28 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Background overlay */}
@@ -26,28 +39,28 @@ export default function CV() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Frontend
+                {t("cv.frontend")}
               </span>
             </h2>
 
             <div className="flex flex-col gap-4 w-full max-w-sm">
               <a
-                href="/CV-FrontEnd-AnaDamore.pdf"
-                download="CV-FrontEnd-AnaDamore.pdf"
+                href={cvPaths.frontend}
+                download={cvFileNames.frontend}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white font-bold hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 transition-all duration-300 text-lg shadow-lg hover:shadow-2xl hover:shadow-blue-500/50 rounded-full"
               >
                 <Download size={24} />
-                Download CV
+                {t("cv.download")}
               </a>
 
               <a
-                href="/CV-FrontEnd-AnaDamore.pdf"
+                href={cvPaths.frontend}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white font-bold hover:bg-white/20 transition-all duration-300 text-lg rounded-full"
               >
                 <Eye size={24} />
-                Ver CV
+                {t("cv.view")}
               </a>
             </div>
           </motion.div>
@@ -61,28 +74,28 @@ export default function CV() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                UI/UX
+                {t("cv.uiux")}
               </span>
             </h2>
 
             <div className="flex flex-col gap-4 w-full max-w-sm">
               <a
-                href="/CV-UIUX-AnaDamore.pdf"
-                download="CV-UIUX-AnaDamore.pdf"
+                href={cvPaths.uiux}
+                download={cvFileNames.uiux}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white font-bold hover:from-purple-600 hover:via-pink-600 hover:to-cyan-600 transition-all duration-300 text-lg shadow-lg hover:shadow-2xl hover:shadow-purple-500/50 rounded-full"
               >
                 <Download size={24} />
-                Download CV
+                {t("cv.download")}
               </a>
 
               <a
-                href="/CV-UIUX-AnaDamore.pdf"
+                href={cvPaths.uiux}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white font-bold hover:bg-white/20 transition-all duration-300 text-lg rounded-full"
               >
                 <Eye size={24} />
-                Ver CV
+                {t("cv.view")}
               </a>
             </div>
           </motion.div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useState } from "react"
+import { useLanguage } from "@/lib/i18n/LanguageContext"
 
 type Technology = {
   name: string
@@ -37,16 +38,17 @@ const technologies: Technology[] = [
   { name: "Photoshop", icon: "/tecnologias/logo-photoshop.png", category: ["uiux"] },
 ]
 
-const categories = [
-  { id: "todas", label: "Todas" },
-  { id: "frontend", label: "Frontend" },
-  { id: "backend", label: "Backend" },
-  { id: "uiux", label: "UI/UX" },
-  { id: "tecnologias", label: "Tecnologias" },
-]
-
 export default function Sistemas() {
+  const { t } = useLanguage()
   const [activeCategory, setActiveCategory] = useState("todas")
+
+  const categories = [
+    { id: "todas", label: t("technologies.categories.all") },
+    { id: "frontend", label: t("technologies.categories.frontend") },
+    { id: "backend", label: t("technologies.categories.backend") },
+    { id: "uiux", label: t("technologies.categories.uiux") },
+    { id: "tecnologias", label: t("technologies.categories.tech") },
+  ]
 
   const filteredTechnologies = activeCategory === "todas"
     ? technologies
@@ -73,11 +75,11 @@ export default function Sistemas() {
         >
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Tecnologias
+              {t("technologies.title")}
             </span>
           </h1>
           <p className="text-white/70 text-lg">
-            Ferramentas e tecnologias que domino
+            {t("technologies.subtitle")}
           </p>
         </motion.div>
 
@@ -139,7 +141,7 @@ export default function Sistemas() {
         {/* Mensagem se não houver tecnologias */}
         {filteredTechnologies.length === 0 && (
           <div className="text-center text-white/50 py-20">
-            <p className="text-xl">Nenhuma tecnologia encontrada nesta categoria</p>
+            <p className="text-xl">{t("technologies.emptyMessage")}</p>
           </div>
         )}
       </div>

@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
+import { projectDescriptions } from '@/lib/i18n/projectsData';
 
 type Project = {
   id: number;
@@ -289,16 +291,23 @@ const projects: Project[] = [
   }
 ];
 
-const categories = [
-  { id: "todos", label: "Todos" },
-  { id: "site", label: "Site" },
-  { id: "sistema", label: "Sistema" },
-  { id: "aplicativo", label: "Aplicativo" },
-  { id: "prototipo", label: "Protótipo" },
-];
-
 export default function BudgetForm() {
+  const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("todos");
+
+  // Function to get translated description
+  const getDescription = (projectId: number) => {
+    const descriptions = projectDescriptions[projectId];
+    return descriptions ? descriptions[language] : '';
+  };
+
+  const categories = [
+    { id: "todos", label: t("projects.categories.all") },
+    { id: "site", label: t("projects.categories.site") },
+    { id: "sistema", label: t("projects.categories.system") },
+    { id: "aplicativo", label: t("projects.categories.app") },
+    { id: "prototipo", label: t("projects.categories.prototype") },
+  ];
 
   const filteredProjects = activeCategory === "todos"
     ? projects
@@ -324,11 +333,11 @@ export default function BudgetForm() {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Projetos
+              {t("projects.title")}
             </span>
           </h1>
           <p className="text-white/80 text-lg max-w-3xl mx-auto">
-            Aqui estão alguns dos meus projetos recentes que demonstram minhas habilidades e experiência.
+            {t("projects.subtitle")}
           </p>
         </motion.div>
 
@@ -400,13 +409,13 @@ export default function BudgetForm() {
 
                     {/* Descrição */}
                     <p className="text-white/70 text-sm mb-4 leading-relaxed">
-                      {project.description}
+                      {getDescription(project.id) || project.description}
                     </p>
 
                     {/* Mensagem de Confidencialidade para Protótipos */}
                     {project.category === "prototipo" && !project.hideConfidentialityMessage && (
                       <p className="text-white/50 text-xs italic mb-4">
-                        Informações visuais e técnicas não são exibidas por confidencialidade contratual.
+                        {t("projects.confidentialProject")}
                       </p>
                     )}
 

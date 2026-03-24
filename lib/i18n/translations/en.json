@@ -1,0 +1,87 @@
+{
+  "header": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "technologies": "Technologies",
+      "projects": "Projects",
+      "cv": "Resume"
+    }
+  },
+  "hero": {
+    "phrases": {
+      "0": "I create solutions that impact and generate results",
+      "1": "Take your development team to the next level"
+    },
+    "greeting": "Hi, I'm Ana Damore",
+    "expert": "I'm an expert in:",
+    "words": {
+      "sites": "websites",
+      "systems": "systems",
+      "wordpress": "wordpress",
+      "ecommerce": "e-commerce",
+      "prototypes": "prototypes",
+      "frontend": "frontend"
+    },
+    "cta": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I'm a <strong>Developer</strong> passionate about creating interactive digital experiences. With a solid foundation in modern web technologies and an eye for design, I bridge the gap between functional code and aesthetic excellence.",
+    "description2": "I enjoy solving complex problems and turning innovative ideas into reality. I take pleasure in building clean, fast, and efficient digital experiences.",
+    "stats": {
+      "years_dev": "Years in Development",
+      "years_uiux": "Years in UI/UX",
+      "projects": "Delivered Projects",
+      "satisfaction": "Satisfied Clients",
+      "dedication": "Immediate Availability",
+      "location": "Campo Grande, MS",
+      "education": "IFMS - Internet Systems"
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "Tools and technologies I master",
+    "emptyMessage": "No technologies found in this category",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "uiux": "UI/UX",
+      "tech": "Technologies"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Here are some of my recent projects that demonstrate my skills and experience.",
+    "categories": {
+      "all": "All",
+      "site": "Website",
+      "system": "System",
+      "app": "App",
+      "prototype": "Prototype"
+    },
+    "viewMore": "View More",
+    "technologies": "Technologies",
+    "confidentialProject": "Visual and technical information are not displayed due to contractual confidentiality."
+  },
+  "cv": {
+    "frontend": "Frontend",
+    "uiux": "UI/UX",
+    "download": "Download Resume",
+    "view": "View Resume"
+  },
+  "footer": {
+    "description": "Front-End & UI Developer specialized in creating exceptional digital experiences with the most modern technologies.",
+    "quickLinks": "Quick Links",
+    "about": "About Me",
+    "portfolio": "Portfolio",
+    "budget": "Request Quote",
+    "contact": "Contact",
+    "copyright": "Ana Carolina Damore. Developed with",
+    "and": "and lots of coffee."
+  },
+  "whatsapp": {
+    "message": "Hello! I would like to talk about a project."
+  }
+}

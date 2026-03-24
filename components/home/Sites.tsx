@@ -1,8 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useLanguage } from "@/lib/i18n/LanguageContext"
 
 export default function Sites() {
+  const { t } = useLanguage()
   return (
     <section className="relative h-screen overflow-hidden pt-28 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Background overlay */}
@@ -49,19 +51,19 @@ export default function Sites() {
             <div className="grid grid-cols-2 gap-3 w-full max-w-[420px]">
               <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border-2 border-cyan-400/30 rounded-xl p-3 text-center">
                 <p className="text-2xl font-bold text-cyan-400 mb-1">5+</p>
-                <p className="text-white/90 text-xs">Anos em desenvolvimento</p>
+                <p className="text-white/90 text-xs">{t("about.stats.years_dev")}</p>
               </div>
               <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border-2 border-blue-400/30 rounded-xl p-3 text-center">
                 <p className="text-2xl font-bold text-blue-400 mb-1">8+</p>
-                <p className="text-white/90 text-xs">Anos em UI/UX</p>
+                <p className="text-white/90 text-xs">{t("about.stats.years_uiux")}</p>
               </div>
               <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 backdrop-blur-sm border-2 border-purple-400/30 rounded-xl p-3 flex items-center gap-2">
                 <p className="text-xl font-bold text-purple-400">📍</p>
-                <p className="text-white/90 text-xs">Campo Grande, MS</p>
+                <p className="text-white/90 text-xs">{t("about.stats.location")}</p>
               </div>
               <div className="bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 backdrop-blur-sm border-2 border-indigo-400/30 rounded-xl p-3 flex items-center gap-2">
                 <p className="text-xl font-bold text-indigo-400">🎓</p>
-                <p className="text-white/90 text-xs">IFMS - Sistemas para Internet</p>
+                <p className="text-white/90 text-xs">{t("about.stats.education")}</p>
               </div>
             </div>
           </motion.div>
@@ -75,17 +77,14 @@ export default function Sites() {
           >
             <h1 className="text-4xl md:text-5xl font-bold">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Sobre Mim
+                {t("about.title")}
               </span>
             </h1>
 
             <div className="space-y-4 text-lg leading-relaxed">
+              <p className="text-white/90" dangerouslySetInnerHTML={{ __html: t("about.description1") }} />
               <p className="text-white/90">
-                Sou uma <span className="font-semibold text-cyan-400">Desenvolvedora</span> apaixonada por criar experiências digitais interativas. Com uma base sólida em tecnologias modernas da web e um olhar atento para o design, faço a integração entre código funcional e excelência estética.
-              </p>
-
-              <p className="text-white/90">
-                Gosto de resolver problemas complexos e transformar ideias inovadoras em realidade. Tenho prazer em construir experiências digitais limpas, rápidas e eficientes.
+                {t("about.description2")}
               </p>
             </div>
 
@@ -93,14 +92,14 @@ export default function Sites() {
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-4 text-center hover:bg-white/20 transition-all">
                 <p className="text-3xl font-bold text-cyan-400">35+</p>
-                <p className="text-sm text-white/70 mt-1">Projetos Entregues</p>
+                <p className="text-sm text-white/70 mt-1">{t("about.stats.projects")}</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-4 text-center hover:bg-white/20 transition-all">
                 <p className="text-3xl font-bold text-cyan-400">100%</p>
-                <p className="text-sm text-white/70 mt-1">Clientes Satisfeitos</p>
+                <p className="text-sm text-white/70 mt-1">{t("about.stats.satisfaction")}</p>
               </div>
               <div className="bg-gradient-to-br from-green-500/30 to-emerald-500/30 backdrop-blur-sm border-2 border-green-400/50 rounded-xl p-4 flex items-center justify-center hover:bg-green-500/40 transition-all">
-                <p className="text-xs sm:text-sm md:text-base font-bold text-green-300 text-center">Disponibilidade Imediata</p>
+                <p className="text-xs sm:text-sm md:text-base font-bold text-green-300 text-center">{t("about.stats.dedication")}</p>
               </div>
             </div>
           </motion.div>

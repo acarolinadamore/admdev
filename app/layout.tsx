@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -32,7 +33,9 @@ export default function RootLayout({
         style={{ backgroundColor: '#0a1628', fontFamily: 'var(--font-archivo)' }}
         suppressHydrationWarning
       >
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
