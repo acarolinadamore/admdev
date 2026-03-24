@@ -1,4 +1,4 @@
-# Ana Carolina Damore - Portfolio & Budget Platform
+# Ana Carolina Damore - Portfolio
 
 Site profissional para freelancer Front-End Developer, com portfolio interativo, sistema de solicitação de orçamentos e futuro painel administrativo para gestão de propostas e contratos.
 
