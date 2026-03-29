@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: "Desenvolvimento de sites institucionais, e-commerce, landing pages e sistemas personalizados. Soluções digitais completas para o seu negócio.",
   keywords: ["desenvolvimento web", "sites institucionais", "e-commerce", "landing page", "sistemas web", "desenvolvimento de sistemas"],
   authors: [{ name: "ADM Sites e Sistemas" }],
+  verification: {
+    google: "UpufIWN7DUZwi9sPZdf4oLT7mWPcsFXda5iCpgTVxlY",
+  },
   openGraph: {
     title: "ADM Sites e Sistemas | Desenvolvimento Web",
     description: "Desenvolvimento de sites, e-commerce, landing pages e sistemas personalizados",
