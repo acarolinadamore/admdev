@@ -64,6 +64,15 @@ const projects: Project[] = [
     link: "https://raraamazoniajoias.com.br/"
   },
   {
+    id: 38,
+    title: "Via Rosarium - Loja Virtual",
+    description: "E-commerce católico especializado em terços e rosários personalizados artesanalmente. Loja virtual completa desenvolvida em Next.js com carrinho de compras, sistema de pagamento integrado e área administrativa para gestão de produtos e pedidos.",
+    image: "/sites/site-rosarium-preview.png",
+    technologies: ["Next.js", "React", "Node.js"],
+    category: "site",
+    link: "http://viarosarium.vercel.app/"
+  },
+  {
     id: 17,
     title: "Burger House",
     description: "Site para hamburgueria artesanal com cardápio digital, sistema de pedidos online e área de promoções. Design moderno e apetitoso que destaca os produtos.",
@@ -87,6 +96,14 @@ const projects: Project[] = [
     technologies: ["React", "Node.js", "API REST", "PostgreSQL"],
     category: "sistema",
     link: "https://pantanalemalerta.bombeiros.ms.gov.br/"
+  },
+  {
+    id: 39,
+    title: "Via Rosarium - Painel Administrativo",
+    description: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
+    image: "/sistemas/sistema-rosarium.png",
+    technologies: ["Next.js", "React", "Node.js", "PostgreSQL"],
+    category: "sistema"
   },
   {
     id: 16,

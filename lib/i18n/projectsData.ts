@@ -146,5 +146,13 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
   37: {
     pt: "Site institucional da Jooy, marca do grupo EVO voltada ao segmento médio e médio-alto. Desenvolvido em WordPress com Elementor.",
     en: "Institutional website for Jooy, EVO group brand targeting the middle and upper-middle segments. Developed with WordPress and Elementor."
+  },
+  38: {
+    pt: "E-commerce católico especializado em terços e rosários personalizados artesanalmente. Loja virtual completa desenvolvida em Next.js com carrinho de compras, sistema de pagamento integrado e área administrativa para gestão de produtos e pedidos.",
+    en: "Catholic e-commerce specialized in handcrafted custom rosaries and prayer beads. Complete online store developed in Next.js with shopping cart, integrated payment system, and administrative area for product and order management."
+  },
+  39: {
+    pt: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
+    en: "Complete administrative system for Catholic e-commerce management. Panel developed in Next.js with product control, order management, inventory, sales reports, and analytical dashboard for Via Rosarium store administration."
   }
 };
