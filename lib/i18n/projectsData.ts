@@ -158,5 +158,9 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
   40: {
     pt: "Plataforma digital de catalogação e consulta do acervo pessoal de livros católicos do Pe. Carlos Alberto Pereira. Sistema desenvolvido em Next.js com busca avançada por título, autor e palavra-chave, utilizando IA Claude para captura automática de capas e preenchimento de dados.",
     en: "Digital platform for cataloging and consulting the personal Catholic book collection of Fr. Carlos Alberto Pereira. System developed in Next.js with advanced search by title, author, and keywords, using Claude AI for automatic cover capture and data filling."
+  },
+  41: {
+    pt: "Sistema de organização pessoal e produtividade desenvolvido em Next.js. Plataforma completa com módulos de evolução pessoal e profissional, controle de hábitos e rotina, gestão financeira, saúde, contatos, wishlist, anotações e documentos importantes.",
+    en: "Personal organization and productivity system developed in Next.js. Complete platform with personal and professional development modules, habit and routine control, financial management, health, contacts, wishlist, notes, and important documents."
   }
 };

@@ -116,6 +116,15 @@ const projects: Project[] = [
     link: "https://minha-biblioteca-catolica.vercel.app/"
   },
   {
+    id: 41,
+    title: "Ordena",
+    description: "Sistema de organização pessoal e produtividade desenvolvido em Next.js. Plataforma completa com módulos de evolução pessoal e profissional, controle de hábitos e rotina, gestão financeira, saúde, contatos, wishlist, anotações e documentos importantes.",
+    image: "/sistemas/sistema-ordena.png",
+    technologies: ["Next.js", "React", "Node.js"],
+    category: "sistema",
+    link: "https://ordenaseudia.vercel.app/"
+  },
+  {
     id: 16,
     title: "ERP - Sistema de Gestão Empresarial",
     description: "Sistema completo de gestão empresarial integrado. Plataforma robusta com módulos de controle financeiro, estoque, vendas, compras e relatórios gerenciais para otimização de processos corporativos.",
