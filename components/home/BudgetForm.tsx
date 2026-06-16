@@ -116,6 +116,15 @@ const projects: Project[] = [
     link: "https://minha-biblioteca-catolica.vercel.app/"
   },
   {
+    id: 27,
+    title: "SIMSEMP - Sindicato dos Servidores Públicos",
+    description: "Sistema de sindicato dos servidores públicos do Mato Grosso do Sul. Plataforma completa com gestão de filiados, área de notícias, documentos sindicais, benefícios e comunicação com associados.",
+    image: "/sistemas/simsemp-sistema.jpg",
+    technologies: ["React", "Node.js", "PostgreSQL", "API REST"],
+    category: "sistema",
+    link: "https://www.sinsempms.org.br/"
+  },
+  {
     id: 39,
     title: "Via Rosarium - Painel Administrativo",
     description: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
@@ -129,14 +138,6 @@ const projects: Project[] = [
     title: "ERP - Sistema de Gestão Empresarial",
     description: "Sistema completo de gestão empresarial integrado. Plataforma robusta com módulos de controle financeiro, estoque, vendas, compras e relatórios gerenciais para otimização de processos corporativos.",
     image: "/sistemas/erp-sistema2.jpg",
-    technologies: ["React", "Node.js", "PostgreSQL", "API REST"],
-    category: "sistema"
-  },
-  {
-    id: 27,
-    title: "SIMSEMP - Sindicato dos Servidores Públicos",
-    description: "Sistema de sindicato dos servidores públicos do Mato Grosso do Sul. Plataforma completa com gestão de filiados, área de notícias, documentos sindicais, benefícios e comunicação com associados.",
-    image: "/sistemas/simsemp-sistema.jpg",
     technologies: ["React", "Node.js", "PostgreSQL", "API REST"],
     category: "sistema"
   },
@@ -268,7 +269,8 @@ const projects: Project[] = [
     image: "/sites/site-simsemp.jpg",
     technologies: ["Figma"],
     category: "prototipo",
-    hideConfidentialityMessage: true
+    hideConfidentialityMessage: true,
+    link: "https://www.sinsempms.org.br/"
   },
   {
     id: 15,
