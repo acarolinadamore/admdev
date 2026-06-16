@@ -44,6 +44,42 @@ const projects: Project[] = [
     category: "site"
   },
   {
+    id: 34,
+    title: "EVO - Evolução Urbana",
+    description: "Site institucional da EVO Evolução Urbana, holding do setor imobiliário fundada em 2008 em Campo Grande/MS. Plataforma corporativa desenvolvida em WordPress com Elementor, apresentando estrutura de governança, portfólio de empreendimentos organizados por SPEs, e informações sobre as três marcas operacionais do grupo (Hartt, Jooy e Lyvo).",
+    image: "/sites/site-evo-preview.png",
+    technologies: ["WordPress", "Elementor"],
+    category: "site",
+    link: "https://grupoevo.dev.grupoimagetech.com.br/"
+  },
+  {
+    id: 35,
+    title: "Hartt",
+    description: "Site institucional da Hartt, marca premium do grupo EVO especializada em empreendimentos de alto padrão. Desenvolvido em WordPress com Elementor, apresenta lançamentos exclusivos em localizações estratégicas, com design sofisticado que reflete o posicionamento premium da marca no mercado imobiliário.",
+    image: "/sites/site-hartt-preview.png",
+    technologies: ["WordPress", "Elementor"],
+    category: "site",
+    link: "https://hartt.dev.grupoimagetech.com.br/"
+  },
+  {
+    id: 36,
+    title: "Lyvo",
+    description: "Site da Lyvo, marca do grupo EVO focada no segmento econômico e programa Minha Casa Minha Vida (MCMV). Plataforma desenvolvida em WordPress com Elementor, destacando empreendimentos acessíveis com foco em industrialização, escala e disciplina de custo para democratizar o acesso à moradia.",
+    image: "/sites/site-lyvo-preview.png",
+    technologies: ["WordPress", "Elementor"],
+    category: "site",
+    link: "https://lyvoincorporadora.com.br/"
+  },
+  {
+    id: 37,
+    title: "Jooy",
+    description: "Site da Jooy, marca do grupo EVO com atuação no segmento médio e médio-alto. Desenvolvido em WordPress com Elementor, apresenta plataforma verticalizada de produtos urbanos com foco em qualidade, localização e valor agregado para o público que busca equilíbrio entre sofisticação e acessibilidade.",
+    image: "/sites/site-jooy-preview.png",
+    technologies: ["WordPress", "Elementor"],
+    category: "site",
+    link: "https://somosjooy.com.br/"
+  },
+  {
     id: 2,
     title: "Pantanal em Alerta - Bombeiros e Ministério Público",
     description: "Sistema desenvolvido em parceria com o Corpo de Bombeiros e Ministério Público para monitoramento e gestão de ações de preservação do Pantanal. Ferramenta estratégica para coordenação de operações ambientais.",

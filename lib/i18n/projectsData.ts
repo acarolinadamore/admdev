@@ -130,5 +130,21 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
   31: {
     pt: "Sistema de Gestão Administrativa e Financeira do Banco da Amazônia. Plataforma robusta para controle de processos financeiros, orçamentários e administrativos da instituição.",
     en: "Administrative and Financial Management System for Banco da Amazônia. Robust platform for controlling financial, budgetary, and administrative processes of the institution."
+  },
+  34: {
+    pt: "Site institucional da EVO Evolução Urbana, holding do setor imobiliário fundada em 2008 em Campo Grande/MS. Plataforma corporativa desenvolvida em WordPress com Elementor, apresentando estrutura de governança, portfólio de empreendimentos organizados por SPEs, e informações sobre as três marcas operacionais do grupo (Hartt, Jooy e Lyvo).",
+    en: "Institutional website for EVO Evolução Urbana, real estate holding company founded in 2008 in Campo Grande/MS. Corporate platform developed in WordPress with Elementor, featuring governance structure, portfolio of projects organized by SPEs, and information about the group's three operational brands (Hartt, Jooy, and Lyvo)."
+  },
+  35: {
+    pt: "Site institucional da Hartt, marca premium do grupo EVO especializada em empreendimentos de alto padrão. Desenvolvido em WordPress com Elementor, apresenta lançamentos exclusivos em localizações estratégicas, com design sofisticado que reflete o posicionamento premium da marca no mercado imobiliário.",
+    en: "Institutional website for Hartt, premium brand of EVO group specialized in high-standard developments. Developed in WordPress with Elementor, showcases exclusive launches in strategic locations, with sophisticated design reflecting the brand's premium positioning in the real estate market."
+  },
+  36: {
+    pt: "Site da Lyvo, marca do grupo EVO focada no segmento econômico e programa Minha Casa Minha Vida (MCMV). Plataforma desenvolvida em WordPress com Elementor, destacando empreendimentos acessíveis com foco em industrialização, escala e disciplina de custo para democratizar o acesso à moradia.",
+    en: "Website for Lyvo, EVO group brand focused on the economic segment and Minha Casa Minha Vida (MCMV) program. Platform developed in WordPress with Elementor, highlighting affordable developments with focus on industrialization, scale, and cost discipline to democratize access to housing."
+  },
+  37: {
+    pt: "Site da Jooy, marca do grupo EVO com atuação no segmento médio e médio-alto. Desenvolvido em WordPress com Elementor, apresenta plataforma verticalizada de produtos urbanos com foco em qualidade, localização e valor agregado para o público que busca equilíbrio entre sofisticação e acessibilidade.",
+    en: "Website for Jooy, EVO group brand operating in the middle and upper-middle segments. Developed in WordPress with Elementor, features verticalized platform of urban products focused on quality, location, and added value for audiences seeking balance between sophistication and affordability."
   }
 };
