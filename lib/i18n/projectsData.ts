@@ -56,8 +56,8 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
     en: "Complete online store specialized in bicycles and accessories. System with product catalog, shopping cart, payment integration, and administrative panel."
   },
   7: {
-    pt: "Plataforma oficial do SUS para atendimento remoto utilizando tecnologias digitais de saúde. Site institucional WordPress com informações sobre telemedicina, agendamentos e recursos para profissionais de saúde.",
-    en: "Official SUS platform for remote care using digital health technologies. WordPress institutional site with information about telemedicine, appointments, and resources for healthcare professionals."
+    pt: "Plataforma do Governo do Estado de Mato Grosso do Sul para capacitação e educação permanente em saúde. Site institucional WordPress com videoaulas, cursos online e recursos educacionais para profissionais de saúde.",
+    en: "Platform of the Government of Mato Grosso do Sul State for healthcare training and continuing education. WordPress institutional site with video classes, online courses, and educational resources for healthcare professionals."
   },
   8: {
     pt: "Site institucional para laboratório de análises clínicas. Plataforma com informações sobre exames, agendamento online, área do paciente e sistema de resultados.",
@@ -88,28 +88,28 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
     en: "Fashion e-commerce prototype focused on UX. Complete design system, optimized user journey, and simplified checkout."
   },
   15: {
-    pt: "Protótipo de dashboard analítico para gestão empresarial. Interface com gráficos interativos, KPIs, filtros avançados e visualização de dados em tempo real.",
-    en: "Analytical dashboard prototype for business management. Interface with interactive charts, KPIs, advanced filters, and real-time data visualization."
+    pt: "Protótipo de plataforma digital para sindicato dos bancários. Sistema completo com área de notícias, documentos, benefícios, calendário de eventos e comunicação com associados.",
+    en: "Digital platform prototype for bank employees union. Complete system with news area, documents, benefits, event calendar, and member communication."
   },
   18: {
-    pt: "Sistema de gestão hospitalar integrado. Módulos de prontuário eletrônico, agendamento de consultas, controle de leitos, farmácia e faturamento.",
-    en: "Integrated hospital management system. Electronic medical records, appointment scheduling, bed control, pharmacy, and billing modules."
+    pt: "Sistema corporativo para operações aeronáuticas. Plataforma para pilotos preencherem formulários e registros de voo antes de decolar.",
+    en: "Corporate system for aeronautical operations. Platform for pilots to fill out flight forms and records before takeoff."
   },
   19: {
-    pt: "Plataforma de ensino à distância (EAD). Sistema completo com cursos online, videoaulas, fóruns de discussão, avaliações e certificados digitais.",
-    en: "Distance learning platform (EAD). Complete system with online courses, video classes, discussion forums, assessments, and digital certificates."
+    pt: "Aplicativo para cidadãos registrarem ocorrências urbanas. Plataforma que permite fotografar problemas, relatar situações e abrir chamados para a prefeitura realizar reparos e manutenções na cidade.",
+    en: "App for citizens to report urban issues. Platform that allows photographing problems, reporting situations, and opening tickets for the city hall to perform repairs and maintenance."
   },
   20: {
-    pt: "Sistema de controle de frotas e rastreamento veicular. Monitoramento em tempo real, relatórios de rotas, manutenção preventiva e gestão de combustível.",
-    en: "Fleet control and vehicle tracking system. Real-time monitoring, route reports, preventive maintenance, and fuel management."
+    pt: "Plataforma de análise e consulta de dados fundiários. Solução digital voltada ao apoio na tomada de decisão para aquisição de terras, permitindo a consulta e verificação de informações relevantes relacionadas a imóveis rurais.",
+    en: "Platform for analysis and consultation of land data. Digital solution to support decision-making for land acquisition, allowing consultation and verification of relevant information related to rural properties."
   },
   21: {
-    pt: "Portal imobiliário com busca avançada de imóveis. Filtros por localização, preço, características, tour virtual 360° e integração com corretores.",
-    en: "Real estate portal with advanced property search. Filters by location, price, features, 360° virtual tour, and broker integration."
+    pt: "Plataforma para gestão de processos licitatórios. Sistema utilizado no contexto de leilões e licitações, com foco no gerenciamento e acompanhamento de etapas administrativas e cadastrais.",
+    en: "Platform for managing bidding processes. System used in the context of auctions and tenders, focused on managing and tracking administrative and registration stages."
   },
   22: {
-    pt: "Sistema de gestão para clínicas e consultórios médicos. Agendamento online, prontuário eletrônico, prescrições digitais e integração com convênios.",
-    en: "Management system for clinics and medical offices. Online scheduling, electronic medical records, digital prescriptions, and health insurance integration."
+    pt: "Sistema de organização de tarefas e atividades. Solução voltada ao cadastro, controle e acompanhamento de tarefas e atividades em ambientes corporativos.",
+    en: "Task and activity organization system. Solution for registering, controlling, and tracking tasks and activities in corporate environments."
   },
   23: {
     pt: "Chatbot institucional. Assistente virtual desenvolvido para atendimento automatizado em contextos institucionais, com foco em orientação e suporte ao usuário.",
@@ -124,8 +124,8 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
     en: "Digital signature platform. Digital solution for authentication and electronic signature of documents in institutional and corporate environments."
   },
   30: {
-    pt: "App de meditação e bem-estar mental. Sessões guiadas de meditação, exercícios de respiração, sons relaxantes e acompanhamento de humor.",
-    en: "Meditation and mental wellness app. Guided meditation sessions, breathing exercises, relaxing sounds, and mood tracking."
+    pt: "Site institucional do Sindicato dos Servidores Públicos. Plataforma com área de notícias, documentos, benefícios para associados e comunicação sindical.",
+    en: "Institutional website for Public Servants Union. Platform with news area, documents, member benefits, and union communication."
   },
   31: {
     pt: "Sistema de Gestão Administrativa e Financeira do Banco da Amazônia. Plataforma robusta para controle de processos financeiros, orçamentários e administrativos da instituição.",

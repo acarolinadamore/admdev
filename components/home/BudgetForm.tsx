@@ -197,7 +197,7 @@ const projects: Project[] = [
   {
     id: 7,
     title: "Telessaúde MS",
-    description: "Plataforma oficial do SUS para atendimento remoto utilizando tecnologias digitais de saúde. Site institucional WordPress com informações sobre telemedicina, agendamentos e recursos para profissionais de saúde.",
+    description: "Plataforma do Governo do Estado de Mato Grosso do Sul para capacitação e educação permanente em saúde. Site institucional WordPress com videoaulas, cursos online e recursos educacionais para profissionais de saúde.",
     image: "/sites/site-telessaude-preview.png",
     technologies: ["WordPress", "PHP", "MySQL"],
     category: "site"
@@ -282,7 +282,7 @@ const projects: Project[] = [
   {
     id: 19,
     title: "Comunica Cidadão",
-    description: "Aplicativo de atendimento ao cidadão.",
+    description: "Aplicativo para cidadãos registrarem ocorrências urbanas. Plataforma que permite fotografar problemas, relatar situações e abrir chamados para a prefeitura realizar reparos e manutenções na cidade.",
     image: "/prototipo/prototipo-comunica.png",
     technologies: ["Figma"],
     category: "prototipo",
