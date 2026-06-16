@@ -286,12 +286,13 @@ const projects: Project[] = [
   },
   {
     id: 15,
-    title: "FETEC - Sindicato dos Bancários",
+    title: "FETEC CUT - Centro Norte",
     description: "Protótipo de plataforma digital para sindicato dos bancários. Sistema completo com área de notícias, documentos, benefícios, calendário de eventos e comunicação com associados.",
     image: "/prototipo/prototipo-fetec.jpg",
     technologies: ["Figma"],
     category: "prototipo",
-    hideConfidentialityMessage: true
+    hideConfidentialityMessage: true,
+    link: "https://www.feteccn.com.br/"
   },
   {
     id: 18,
