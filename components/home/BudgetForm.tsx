@@ -19,13 +19,13 @@ type Project = {
 
 const projects: Project[] = [
   {
-    id: 37,
-    title: "Jooy",
-    description: "Site institucional da Jooy, marca do grupo EVO voltada ao segmento médio e médio-alto. Desenvolvido em WordPress com Elementor.",
-    image: "/sites/site-jooy-preview.png",
+    id: 34,
+    title: "EVO - Evolução Urbana",
+    description: "Site institucional da EVO Evolução Urbana, holding do setor imobiliário. Plataforma corporativa que apresenta as três marcas operacionais do grupo.",
+    image: "/sites/site-evo-preview.png",
     technologies: ["WordPress", "Elementor"],
     category: "site",
-    link: "https://somosjooy.com.br/"
+    link: "https://grupoevo.dev.grupoimagetech.com.br/"
   },
   {
     id: 35,
@@ -37,13 +37,13 @@ const projects: Project[] = [
     link: "https://hartt.dev.grupoimagetech.com.br/"
   },
   {
-    id: 34,
-    title: "EVO - Evolução Urbana",
-    description: "Site institucional da EVO Evolução Urbana, holding do setor imobiliário. Plataforma corporativa que apresenta as três marcas operacionais do grupo.",
-    image: "/sites/site-evo-preview.png",
+    id: 37,
+    title: "Jooy",
+    description: "Site institucional da Jooy, marca do grupo EVO voltada ao segmento médio e médio-alto. Desenvolvido em WordPress com Elementor.",
+    image: "/sites/site-jooy-preview.png",
     technologies: ["WordPress", "Elementor"],
     category: "site",
-    link: "https://grupoevo.dev.grupoimagetech.com.br/"
+    link: "https://somosjooy.com.br/"
   },
   {
     id: 36,
