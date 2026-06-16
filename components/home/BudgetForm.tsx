@@ -106,6 +106,15 @@ const projects: Project[] = [
     category: "sistema"
   },
   {
+    id: 40,
+    title: "Biblioteca Católica",
+    description: "Plataforma digital de catalogação e consulta do acervo pessoal de livros católicos do Pe. Carlos Alberto Pereira. Sistema desenvolvido em Next.js com busca avançada por título, autor e palavra-chave, utilizando IA Claude para captura automática de capas e preenchimento de dados.",
+    image: "/sistemas/sistema-biblioteca.png",
+    technologies: ["Next.js", "React", "Claude AI", "Node.js"],
+    category: "sistema",
+    link: "https://minha-biblioteca-catolica.vercel.app/"
+  },
+  {
     id: 16,
     title: "ERP - Sistema de Gestão Empresarial",
     description: "Sistema completo de gestão empresarial integrado. Plataforma robusta com módulos de controle financeiro, estoque, vendas, compras e relatórios gerenciais para otimização de processos corporativos.",

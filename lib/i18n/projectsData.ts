@@ -154,5 +154,9 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
   39: {
     pt: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
     en: "Complete administrative system for Catholic e-commerce management. Panel developed in Next.js with product control, order management, inventory, sales reports, and analytical dashboard for Via Rosarium store administration."
+  },
+  40: {
+    pt: "Plataforma digital de catalogação e consulta do acervo pessoal de livros católicos do Pe. Carlos Alberto Pereira. Sistema desenvolvido em Next.js com busca avançada por título, autor e palavra-chave, utilizando IA Claude para captura automática de capas e preenchimento de dados.",
+    en: "Digital platform for cataloging and consulting the personal Catholic book collection of Fr. Carlos Alberto Pereira. System developed in Next.js with advanced search by title, author, and keywords, using Claude AI for automatic cover capture and data filling."
   }
 };
