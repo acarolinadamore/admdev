@@ -98,13 +98,13 @@ const projects: Project[] = [
     link: "https://pantanalemalerta.bombeiros.ms.gov.br/"
   },
   {
-    id: 39,
-    title: "Via Rosarium - Painel Administrativo",
-    description: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
-    image: "/sistemas/sistema-rosarium.png",
-    technologies: ["Next.js", "React", "Node.js", "PostgreSQL"],
+    id: 41,
+    title: "Ordena",
+    description: "Sistema de organização pessoal e produtividade desenvolvido em Next.js. Plataforma completa com módulos de evolução pessoal e profissional, controle de hábitos e rotina, gestão financeira, saúde, contatos, wishlist, anotações e documentos importantes.",
+    image: "/sistemas/sistema-ordena.png",
+    technologies: ["Next.js", "React", "Node.js"],
     category: "sistema",
-    link: "http://viarosarium.vercel.app/"
+    link: "https://ordenaseudia.vercel.app/"
   },
   {
     id: 40,
@@ -116,13 +116,13 @@ const projects: Project[] = [
     link: "https://minha-biblioteca-catolica.vercel.app/"
   },
   {
-    id: 41,
-    title: "Ordena",
-    description: "Sistema de organização pessoal e produtividade desenvolvido em Next.js. Plataforma completa com módulos de evolução pessoal e profissional, controle de hábitos e rotina, gestão financeira, saúde, contatos, wishlist, anotações e documentos importantes.",
-    image: "/sistemas/sistema-ordena.png",
-    technologies: ["Next.js", "React", "Node.js"],
+    id: 39,
+    title: "Via Rosarium - Painel Administrativo",
+    description: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
+    image: "/sistemas/sistema-rosarium.png",
+    technologies: ["Next.js", "React", "Node.js", "PostgreSQL"],
     category: "sistema",
-    link: "https://ordenaseudia.vercel.app/"
+    link: "http://viarosarium.vercel.app/"
   },
   {
     id: 16,
