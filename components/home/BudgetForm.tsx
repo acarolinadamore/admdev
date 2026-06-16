@@ -87,7 +87,8 @@ const projects: Project[] = [
     description: "Plataforma do Governo do Estado de Mato Grosso do Sul para capacitação e educação permanente em saúde. Site institucional WordPress com videoaulas, cursos online e recursos educacionais para profissionais de saúde.",
     image: "/sites/site-telessaude-preview.png",
     technologies: ["WordPress", "PHP", "MySQL"],
-    category: "site"
+    category: "site",
+    link: "https://telessaude.saude.ms.gov.br/"
   },
   {
     id: 17,
@@ -164,7 +165,8 @@ const projects: Project[] = [
     description: "Sistema oficial do Detran MS para gerenciamento de autorizações de alterações veiculares. Plataforma completa para registro, análise e aprovação de modificações em veículos com integração aos sistemas governamentais.",
     image: "/sistemas/sistema-detran-preview.png",
     technologies: ["Angular", "Java"],
-    category: "sistema"
+    category: "sistema",
+    link: "https://www.meudetran.ms.gov.br/"
   },
   {
     id: 28,
@@ -172,7 +174,8 @@ const projects: Project[] = [
     description: "Sistema de Autorização Temporária de Trânsito para Veículos Especiais do Detran MS. Plataforma para gerenciamento e controle de autorizações temporárias de circulação de veículos com características especiais.",
     image: "/sistemas/sistema-atpve.png",
     technologies: ["Angular", "Java"],
-    category: "sistema"
+    category: "sistema",
+    link: "https://www.meudetran.ms.gov.br/"
   },
   {
     id: 33,
