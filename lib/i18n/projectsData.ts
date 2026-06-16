@@ -162,5 +162,9 @@ export const projectDescriptions: { [key: number]: { pt: string; en: string } } 
   41: {
     pt: "Sistema de organização pessoal e produtividade desenvolvido em Next.js. Plataforma completa com módulos de evolução pessoal e profissional, controle de hábitos e rotina, gestão financeira, saúde, contatos, wishlist, anotações e documentos importantes.",
     en: "Personal organization and productivity system developed in Next.js. Complete platform with personal and professional development modules, habit and routine control, financial management, health, contacts, wishlist, notes, and important documents."
+  },
+  42: {
+    pt: "Site institucional do Sindicato dos Servidores Públicos do Mato Grosso do Sul. Plataforma desenvolvida em WordPress com área de notícias, documentos sindicais, benefícios para associados e comunicação com filiados.",
+    en: "Institutional website for the Public Servants Union of Mato Grosso do Sul. Platform developed in WordPress with news area, union documents, member benefits, and communication with affiliates."
   }
 };

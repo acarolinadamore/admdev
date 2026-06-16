@@ -73,6 +73,23 @@ const projects: Project[] = [
     link: "http://viarosarium.vercel.app/"
   },
   {
+    id: 42,
+    title: "SIMSEMP - Site Institucional",
+    description: "Site institucional do Sindicato dos Servidores Públicos do Mato Grosso do Sul. Plataforma desenvolvida em WordPress com área de notícias, documentos sindicais, benefícios para associados e comunicação com filiados.",
+    image: "/sites/site-simsemp.png",
+    technologies: ["WordPress", "PHP", "MySQL"],
+    category: "site",
+    link: "https://www.sinsempms.org.br/"
+  },
+  {
+    id: 7,
+    title: "Telessaúde MS",
+    description: "Plataforma do Governo do Estado de Mato Grosso do Sul para capacitação e educação permanente em saúde. Site institucional WordPress com videoaulas, cursos online e recursos educacionais para profissionais de saúde.",
+    image: "/sites/site-telessaude-preview.png",
+    technologies: ["WordPress", "PHP", "MySQL"],
+    category: "site"
+  },
+  {
     id: 17,
     title: "Burger House",
     description: "Site para hamburgueria artesanal com cardápio digital, sistema de pedidos online e área de promoções. Design moderno e apetitoso que destaca os produtos.",
@@ -203,14 +220,6 @@ const projects: Project[] = [
     description: "Loja virtual completa especializada em bicicletas e acessórios. Sistema com catálogo de produtos, carrinho de compras, integração de pagamento e painel administrativo.",
     image: "/sites/site-shopbike-preview.png",
     technologies: ["React", "Node.js", "Stripe", "PostgreSQL"],
-    category: "site"
-  },
-  {
-    id: 7,
-    title: "Telessaúde MS",
-    description: "Plataforma do Governo do Estado de Mato Grosso do Sul para capacitação e educação permanente em saúde. Site institucional WordPress com videoaulas, cursos online e recursos educacionais para profissionais de saúde.",
-    image: "/sites/site-telessaude-preview.png",
-    technologies: ["WordPress", "PHP", "MySQL"],
     category: "site"
   },
   {
