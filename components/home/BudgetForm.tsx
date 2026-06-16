@@ -103,7 +103,8 @@ const projects: Project[] = [
     description: "Sistema administrativo completo para gestão de e-commerce católico. Painel desenvolvido em Next.js com controle de produtos, gerenciamento de pedidos, estoque, relatórios de vendas e dashboard analítico para administração da loja Via Rosarium.",
     image: "/sistemas/sistema-rosarium.png",
     technologies: ["Next.js", "React", "Node.js", "PostgreSQL"],
-    category: "sistema"
+    category: "sistema",
+    link: "http://viarosarium.vercel.app/"
   },
   {
     id: 40,
