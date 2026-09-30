@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#D2A679">
+  <title>Zustand</title>
+  <circle cx="12" cy="13" r="8.5"/>
+  <circle cx="6.5" cy="6" r="2.6"/>
+  <circle cx="17.5" cy="6" r="2.6"/>
+  <circle cx="9" cy="12.5" r="1.1" fill="#1a1a1a"/>
+  <circle cx="15" cy="12.5" r="1.1" fill="#1a1a1a"/>
+  <path d="M9.5 16.5c.8.7 1.5.7 2.5.7s1.7 0 2.5-.7" stroke="#1a1a1a" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+</svg>

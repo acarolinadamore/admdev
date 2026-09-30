@@ -9,13 +9,13 @@ export default function CV() {
 
   // Define CV paths based on language
   const cvPaths = {
-    frontend: language === 'en' ? '/EN CV-FrontEnd-AnaDamore.pdf' : '/CV-FrontEnd-AnaDamore.pdf',
-    uiux: language === 'en' ? '/EN-UIUX-AnaDamore.pdf' : '/CV-UIUX-AnaDamore.pdf'
+    frontend: language === 'en' ? '/EN-FS-AnaDamore.pdf' : '/FrontEnd-AnaDamore.pdf',
+    uiux: language === 'en' ? '/EN-ProductDesign-AnaDamore.pdf' : '/UIUX-AnaDamore.pdf'
   }
 
   const cvFileNames = {
-    frontend: language === 'en' ? 'EN-CV-FrontEnd-AnaDamore.pdf' : 'CV-FrontEnd-AnaDamore.pdf',
-    uiux: language === 'en' ? 'EN-CV-UIUX-AnaDamore.pdf' : 'CV-UIUX-AnaDamore.pdf'
+    frontend: language === 'en' ? 'EN-FS-AnaDamore.pdf' : 'FrontEnd-AnaDamore.pdf',
+    uiux: language === 'en' ? 'EN-ProductDesign-AnaDamore.pdf' : 'UIUX-AnaDamore.pdf'
   }
   return (
     <section className="relative h-screen overflow-hidden pt-28 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
