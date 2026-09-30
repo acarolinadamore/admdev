@@ -25,7 +25,7 @@ const projects: Project[] = [
     image: "/sites/site-evo-preview.png",
     technologies: ["WordPress", "Elementor"],
     category: "site",
-    link: "https://grupoevo.dev.grupoimagetech.com.br/"
+    link: "https://evourb.com.br/"
   },
   {
     id: 35,
