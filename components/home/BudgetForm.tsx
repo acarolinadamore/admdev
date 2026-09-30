@@ -28,15 +28,6 @@ const projects: Project[] = [
     link: "https://evourb.com.br/"
   },
   {
-    id: 35,
-    title: "Hartt",
-    description: "Site da Hartt, marca premium do grupo EVO especializada em empreendimentos de alto padrão. Desenvolvido em WordPress com Elementor.",
-    image: "/sites/site-hartt-preview.png",
-    technologies: ["WordPress", "Elementor"],
-    category: "site",
-    link: "https://www.instagram.com/hartt.inc/"
-  },
-  {
     id: 37,
     title: "Jooy",
     description: "Site institucional da Jooy, marca do grupo EVO voltada ao segmento médio e médio-alto. Desenvolvido em WordPress com Elementor.",
@@ -44,6 +35,15 @@ const projects: Project[] = [
     technologies: ["WordPress", "Elementor"],
     category: "site",
     link: "https://somosjooy.com.br/"
+  },
+  {
+    id: 35,
+    title: "Hartt",
+    description: "Site da Hartt, marca premium do grupo EVO especializada em empreendimentos de alto padrão. Desenvolvido em WordPress com Elementor.",
+    image: "/sites/site-hartt-preview.png",
+    technologies: ["WordPress", "Elementor"],
+    category: "site",
+    link: "https://www.instagram.com/hartt.inc/"
   },
   {
     id: 36,
