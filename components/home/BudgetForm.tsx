@@ -34,7 +34,7 @@ const projects: Project[] = [
     image: "/sites/site-hartt-preview.png",
     technologies: ["WordPress", "Elementor"],
     category: "site",
-    link: "https://hartt.dev.grupoimagetech.com.br/"
+    link: "https://www.instagram.com/hartt.inc/"
   },
   {
     id: 37,
