@@ -20,7 +20,7 @@ type Project = {
 const projects: Project[] = [
   {
     id: 34,
-    title: "EVO - Evolução Urbana",
+    title: "EVO",
     description: "Site institucional da EVO Evolução Urbana, holding do setor imobiliário. Plataforma corporativa que apresenta as três marcas operacionais do grupo.",
     image: "/sites/site-evo-preview.png",
     technologies: ["WordPress", "Elementor"],
@@ -122,7 +122,7 @@ const projects: Project[] = [
     image: "/sistemas/sistema-ordena.png",
     technologies: ["Next.js", "React", "Node.js"],
     category: "sistema",
-    link: "https://ordenaseudia.vercel.app/"
+    link: "https://ordenaseudia.com.br/"
   },
   {
     id: 40,
