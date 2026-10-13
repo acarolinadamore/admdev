@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/proposta/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*"
+    },
+    {
+      "source": "/site/:slug/:path*",
+      "destination": "https://:slug-demo.grupoadmtecnologia.workers.dev/site/:slug/:path*"
+    }
+  ]
+}
