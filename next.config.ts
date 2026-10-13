@@ -6,6 +6,39 @@ const nextConfig: NextConfig = {
   // /proposta/:path* no vercel.json, que proxya para um worker que exige
   // barra final — sem isso ocorre loop de redirect (ERR_TOO_MANY_REDIRECTS).
   skipTrailingSlashRedirect: true,
+
+  // Com skipTrailingSlashRedirect ativo, o Next.js para de normalizar a
+  // barra final sozinho — então /proposta/<slug>/ (com barra) passava a
+  // cair direto no 404 do Next.js em vez de ser roteado. Este redirect
+  // remove a barra final só em /proposta/*, mantendo o resto do site como
+  // estava.
+  async redirects() {
+    return [
+      {
+        source: "/proposta/:path+/",
+        destination: "/proposta/:path+",
+        permanent: true,
+      },
+    ];
+  },
+
+  // Mesmo rewrite do vercel.json, duplicado aqui para o Next.js também
+  // conhecer a rota /proposta/* diretamente (garante que o proxy para o
+  // worker funcione mesmo quando a requisição chega até o runtime do
+  // Next.js, não só na borda da Vercel).
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/proposta/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*",
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
 };
 
 export default nextConfig;
