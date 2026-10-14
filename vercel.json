@@ -5,6 +5,30 @@
       "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*"
     },
     {
+      "source": "/checklist/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/checklist/:path*"
+    },
+    {
+      "source": "/tabela-precos",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos"
+    },
+    {
+      "source": "/tabela-precos/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos/:path*"
+    },
+    {
+      "source": "/escopo/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/escopo/:path*"
+    },
+    {
+      "source": "/termo-aceite/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/termo-aceite/:path*"
+    },
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/_astro/:path*"
+    },
+    {
       "source": "/site/:slug/:path*",
       "destination": "https://:slug-demo.grupoadmtecnologia.workers.dev/site/:slug/:path*"
     }

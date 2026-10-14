@@ -22,10 +22,10 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Mesmo rewrite do vercel.json, duplicado aqui para o Next.js também
-  // conhecer a rota /proposta/* diretamente (garante que o proxy para o
-  // worker funcione mesmo quando a requisição chega até o runtime do
-  // Next.js, não só na borda da Vercel).
+  // Mesmos rewrites do vercel.json, duplicados aqui para o Next.js também
+  // conhecer essas rotas diretamente (garante que o proxy para o worker
+  // funcione mesmo quando a requisição chega até o runtime do Next.js, não
+  // só na borda da Vercel).
   async rewrites() {
     return {
       beforeFiles: [
@@ -33,6 +33,36 @@ const nextConfig: NextConfig = {
           source: "/proposta/:path*",
           destination:
             "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*",
+        },
+        {
+          source: "/checklist/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/checklist/:path*",
+        },
+        {
+          source: "/tabela-precos",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos",
+        },
+        {
+          source: "/tabela-precos/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos/:path*",
+        },
+        {
+          source: "/escopo/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/escopo/:path*",
+        },
+        {
+          source: "/termo-aceite/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/termo-aceite/:path*",
+        },
+        {
+          source: "/_astro/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/_astro/:path*",
         },
       ],
       afterFiles: [],
