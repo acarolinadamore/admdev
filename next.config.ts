@@ -35,6 +35,16 @@ const nextConfig: NextConfig = {
             "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*",
         },
         {
+          source: "/contrato/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/contrato/:path*",
+        },
+        {
+          source: "/manutencao/:path*",
+          destination:
+            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/manutencao/:path*",
+        },
+        {
           source: "/checklist/:path*",
           destination:
             "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/checklist/:path*",
