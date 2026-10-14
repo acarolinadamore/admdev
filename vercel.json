@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/proposta/:slug/contrato",
+      "destination": "/contrato/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/proposta/:slug/manutencao",
+      "destination": "/manutencao/:slug",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/proposta/:path*",

@@ -14,6 +14,18 @@ const nextConfig: NextConfig = {
   // estava.
   async redirects() {
     return [
+      // Contrato e manutenção viraram rotas de topo na reorganização dos
+      // documentos do adm-ops (antes eram sub-rotas de /proposta/<slug>/*).
+      {
+        source: "/proposta/:slug/contrato",
+        destination: "/contrato/:slug",
+        permanent: true,
+      },
+      {
+        source: "/proposta/:slug/manutencao",
+        destination: "/manutencao/:slug",
+        permanent: true,
+      },
       {
         source: "/proposta/:path+/",
         destination: "/proposta/:path+",
