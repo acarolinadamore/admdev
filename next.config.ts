@@ -31,6 +31,21 @@ const nextConfig: NextConfig = {
         destination: "/proposta/:path+",
         permanent: true,
       },
+      // Mesmo motivo do /proposta/:path+/ acima: com skipTrailingSlashRedirect
+      // ativo, "/site/<slug>/" (slug sozinho com barra, sem nada depois) não
+      // bate com o rewrite de /site/:slug/:path* no vercel.json e cai no 404
+      // do Next.js. Esses dois redirects normalizam a barra antes do rewrite,
+      // tanto pro caso "só o slug" quanto pro caso "slug + caminho".
+      {
+        source: "/site/:slug/",
+        destination: "/site/:slug",
+        permanent: true,
+      },
+      {
+        source: "/site/:slug/:path+/",
+        destination: "/site/:slug/:path+",
+        permanent: true,
+      },
     ];
   },
 
@@ -85,6 +100,11 @@ const nextConfig: NextConfig = {
           source: "/_astro/:path*",
           destination:
             "https://propostas.anadamore.com.br/_astro/:path*",
+        },
+        {
+          source: "/site/:slug/:path*",
+          destination:
+            "https://:slug-demo.grupoadmtecnologia.workers.dev/:path*",
         },
       ],
       afterFiles: [],

@@ -9,6 +9,16 @@
       "source": "/proposta/:slug/manutencao",
       "destination": "/manutencao/:slug",
       "permanent": true
+    },
+    {
+      "source": "/site/:slug/",
+      "destination": "/site/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/site/:slug/:path+/",
+      "destination": "/site/:slug/:path+",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -50,7 +60,7 @@
     },
     {
       "source": "/site/:slug/:path*",
-      "destination": "https://:slug-demo.grupoadmtecnologia.workers.dev/site/:slug/:path*"
+      "destination": "https://:slug-demo.grupoadmtecnologia.workers.dev/:path*"
     }
   ]
 }
