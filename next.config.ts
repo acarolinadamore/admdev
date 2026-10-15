@@ -44,47 +44,47 @@ const nextConfig: NextConfig = {
         {
           source: "/proposta/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/proposta/:path*",
+            "https://propostas.anadamore.com.br/proposta/:path*",
         },
         {
           source: "/contrato/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/contrato/:path*",
+            "https://propostas.anadamore.com.br/contrato/:path*",
         },
         {
           source: "/manutencao/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/manutencao/:path*",
+            "https://propostas.anadamore.com.br/manutencao/:path*",
         },
         {
           source: "/checklist/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/checklist/:path*",
+            "https://propostas.anadamore.com.br/checklist/:path*",
         },
         {
           source: "/tabela-precos",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos",
+            "https://propostas.anadamore.com.br/tabela-precos",
         },
         {
           source: "/tabela-precos/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/tabela-precos/:path*",
+            "https://propostas.anadamore.com.br/tabela-precos/:path*",
         },
         {
           source: "/escopo/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/escopo/:path*",
+            "https://propostas.anadamore.com.br/escopo/:path*",
         },
         {
           source: "/termo-aceite/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/termo-aceite/:path*",
+            "https://propostas.anadamore.com.br/termo-aceite/:path*",
         },
         {
           source: "/_astro/:path*",
           destination:
-            "https://adm-ops-propostas.grupoadmtecnologia.workers.dev/_astro/:path*",
+            "https://propostas.anadamore.com.br/_astro/:path*",
         },
       ],
       afterFiles: [],
