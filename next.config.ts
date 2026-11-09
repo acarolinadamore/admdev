@@ -106,6 +106,16 @@ const nextConfig: NextConfig = {
           destination:
             "https://:slug-demo.grupoadmtecnologia.workers.dev/:path*",
         },
+        {
+          source: "/morada302/guiadeboasvindas",
+          destination:
+            "https://morada302-guiadeboasvindas.grupoadmtecnologia.workers.dev/morada302/guiadeboasvindas",
+        },
+        {
+          source: "/morada302/guiadeboasvindas/:path*",
+          destination:
+            "https://morada302-guiadeboasvindas.grupoadmtecnologia.workers.dev/morada302/guiadeboasvindas/:path*",
+        },
       ],
       afterFiles: [],
       fallback: [],
